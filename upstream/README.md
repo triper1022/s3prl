@@ -25,7 +25,7 @@ We provide an all-in-one unified interface for numerous speech pretrained models
     - **last_hidden_state:** a tensor in the shape of `(batch_size, extracted_seqlen, feature_dim)`
     - **hidden_states:** a list of tensors all in the same shape of `(batch_size, extracted_seqlen, feature_dim)`
 
-For upstream models that operate on features other than wav (for example: log Mel, fbank, etc), the preprocessing of wav -> feature is done on-they-fly during model forward. Rest assured that this will not increase your runtime.
+For upstream models that operate on features other than wav (for example: log Mel, fbank, etc), the preprocessing of wav -> feature is done on the fly during model forward. Rest assured that this will not increase your runtime.
 
 ## Upstream Self-Supervised Models
 Below is a list of available upstream models that we currently support: 
