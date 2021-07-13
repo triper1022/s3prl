@@ -23,7 +23,7 @@ We provide an all-in-one unified interface for numerous speech pretrained models
 - **input**: list of unpadded wavs `[wav1, wav2, ...]`, each wav is in `torch.FloatTensor`
 - **output**: list of unpadded representations `[rep1, rep2, ...]`, each erp is of the shape `(extracted_seqlen, feature_dim)`
 
-For upstream models that operate on features other than wav (for example: log Mel, fbank, etc), the preprocessing of wav -> feature is done on-they-fly during model forward. Rest assured that this will not increase your runtime.
+For upstream models that operate on features other than wav (for example: log Mel, fbank, etc), the preprocessing of wav -> feature is done on the fly during model forward. Rest assured that this will not increase your runtime.
 
 ## Upstream Self-Supervised Models
 Below is a list of available upstream models that we currently support: 
